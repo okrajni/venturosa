@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Venturosa Event Agency</title>
+    <meta charset="utf-8" />
+
+    <!-- USTAWIENIE VIEWPORT -->
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Opis strony -->
+    <meta name="description" content="Venturosa">
+    <meta name="author" content="JT">
+    <meta name="keywords" content="travel, traveling, krakow, krakowski, podróże, events, trips" />
+    <meta name="robots" content="index,follow" />
+
+    <!-- CSSy -->
+    <link rel="stylesheet" type="text/css" href="main2.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+        
+  </head>
+  <body>
+    <container class="page_grid">
+      <header>
+        <div class="page_title">
+          <h1>Venturosa</h1>
+        </div>
+        <div class="nav">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#photos">Photos</a></li>
+            <li><a href="#offer">Offer</a></li>
+            <li><a href="#footer">Contact</a></li>
+          </ul>
+        </div>
+        <div class="additional_text">
+          <h2>Event and Travel Agency</h2>
+        </div>
+        <div class="seemore">
+          <!-- <img src="img/scroll.svg"> -->
+          <a href=#about>See more</a>
+        </div>
+      </header>
+
+
+      <main>
+        <!-- ABOUT -->
+        <div class="content" id="about">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        
+        <!-- PHOTOS -->
+        <div class="photos" id="photos">
+          <div class="photos_title">
+            <h3>Photos</h3>
+            <h4>see our latest realisations</h4>
+          </div>
+          <div class="photo_1">
+            <img class="photo" src="img/1.png">
+          </div>
+          <div>
+            <div class="photo_2">
+              <img class="photo" src="img/2.png">
+            </div>
+            <div class="photo_3">
+            <img class="photo" src="img/3.png">
+          </div>
+        </div>
+          
+          <div class="photo_4">
+            <img class="photo" src="img/4.png">
+          </div>
+          
+        </div>
+
+        <!-- OFFER -->
+        <div class="offer" id="offer">
+          <div class="window_1">
+            <img src="img/icon.svg">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="window_2">
+            <img src="img/icon.svg">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="window_3">
+            <img src="img/icon.svg">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="window_4">
+            <img src="img/icon.svg">
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+        </div>
+
+        <div class="qwota">
+          <p>Wherever you go, go with all your heart.</p>
+        </div>
+
+      </main>
+      
+      <footer id="footer">
+        <div>
+          <h3> Contact</h3>
+          <h4>Don't hesitate to mail us</h4>
+
+        </div>
+        <div class="contact">
+          <div class="contact_1">
+            <p><span>Gabriela Gajewska</span></p>
+            <p>Event Manager</p>
+            <p>tel: +48 123 123 123</p>
+            <p>gg@venturosa.pl</p>
+          </div>
+          <div class="contact_2">
+            <p><span>Gabriela Gajewska</span></p>
+            <p>Event Manager</p>
+            <p>tel: +48 123 123 123</p>
+            <p>gg@venturosa.pl</p>
+          </div>
+        </div>
+        <div class="copy"><a href="http://jt-media.pl/">&copy; 2017 JT MEDIA</a></div>
+      </footer>
+    </container>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).on('click', 'a[href^="#about"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+      $(document).on('click', 'a[href^="#offer"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+      $(document).on('click', 'a[href^="#photos"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+      $(document).on('click', 'a[href^="#footer"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: $($.attr(this, 'href')).offset().top
+        }, 500);
+      });
+
+    </script>
+  </body>
+</html>
