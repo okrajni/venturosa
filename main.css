@@ -1,0 +1,159 @@
+/*GRID HEADER*/
+.header {
+	/*width: 100vh;*/
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 100%;
+	grid-gap: 10px;
+	grid-template-rows: 15vh 10vh 70vh;
+	text-align:center;
+	background-image: url('img/lawender2.png');
+	background-size: cover;
+}
+
+.title {
+	grid-column: 1;
+	grid-row: 1;
+	/*background-color: pink;*/
+}
+
+.nav {
+	grid-column: 1;
+	grid-row: 2;
+	/*background-color: yellow;*/
+}
+
+.additional_text {
+	grid-column: 1;
+	grid-row: 3;
+	/*background-color: green;*/
+	padding: 30px 0 0 0;
+}
+/*GRID CONTENT*/
+.content {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 80vh;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+ 	grid-gap: 10px;
+ 	grid-template-rows: 1;
+	text-align:center;
+	background-color: #fff;
+	justify-items: center;
+}
+
+.description {
+	padding: 120px 20px;
+	width: 100%;
+	grid-column: 2/12;
+	grid-row: 1/2;
+	align-self: stretch;
+	font-size: 30px;
+}
+
+.offer {
+	margin: 0;
+	padding: 60px 0;
+	width: 100%;
+	height: 150px;
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+ 	grid-gap: 20px;
+ 	grid-auto-rows: minmax(100px, auto);
+	justify-items: stretch;
+	align-self: stretch;
+	text-align:center;
+	background-color: #bbcad0;
+}
+.offer img {
+	width: 50%;
+}
+.offer .win_1 {
+	margin: 10px;
+	padding: 100px 0;
+	width: 100%;
+	grid-column: 2/4;
+	grid-row: 2/4;
+	background-color: red;
+
+}
+
+.offer .win_2 {
+	margin: 10px;
+	padding: 100px 0;
+	width: 100%;
+	grid-column: 4/6;
+	grid-row: 2/4;
+	background-color: yellow;
+
+}
+
+.offer .win_3 {
+	margin: 10px;
+	padding: 100px 0;
+	width: 100%;
+	grid-column: 6/8;
+	grid-row: 2/4;
+
+}
+
+.offer .win_4 {
+	margin: 10px;
+	padding: 100px 0;
+	width: 100%;
+	grid-column: 8/10;
+	grid-row: 2/4;
+
+}
+
+
+.offer div {
+	display: inline;
+	padding: 100px;
+	border-style: solid;
+    border-width: 2px;
+}
+
+.photos {
+	width: 100%;
+	height: 100%;
+	grid-column: 1/13;
+	grid-row: 8/12;
+	/*background-color: yellow;*/
+}
+
+/*GRID FOOTER*/
+.footer{
+
+}
+/*WEB STYLES*/
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+a:link {
+  color: #000;
+}
+
+a:visited{
+  color: #000;
+}
+
+ul li{
+	display: inline;
+	font-size: 15px;
+	padding: 0 40px;
+
+}
+
+.header h1 {
+	font-size: 60px;
+}
+
+.header h2 {
+	font-size: 30px;
+}
